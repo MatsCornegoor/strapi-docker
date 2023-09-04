@@ -19,10 +19,10 @@ services:
     links:
       - postgresDB:postgresDB
     volumes:
-      - ./strapi/config:/opt/app/config
-      - ./strapi/src:/opt/app/src
-      - ./strapi/package.json:/opt/package.json
-      - ./strapi/yarn.lock:/opt/yarn.lock
+      # - ./strapi/config:/opt/app/config
+      # - ./strapi/src:/opt/app/src
+      # - ./strapi/package.json:/opt/package.json
+      # - ./strapi/yarn.lock:/opt/yarn.lock
       # - ./.env:/opt/app/.env
       - ./stack.env:/opt/app/.env
     ports:
