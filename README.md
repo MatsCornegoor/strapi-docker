@@ -4,7 +4,7 @@
 
 ## To run in Development Mode:
 
-1. Run `docker-compose up -d postgresDB && npm run develop`
+1. Run `docker-compose up -d postgresDB pgadmin && npm --prefix strapi run develop`
    > This command will run a Postgresql server docker container and then locally run your Strapi Server for your development requirements.
 
 ## To run in Production
