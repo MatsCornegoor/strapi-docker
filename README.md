@@ -20,8 +20,6 @@ You will reach a point where you will need to test or run the Strapi service in 
 
 Open your browser and navigate to `http://localhost:1337`
 
-Reference: [Click Here](https://blog.dehlin.dev/docker-with-strapi-v4)
-
 
 ## Setup pgAdmin
 
@@ -29,3 +27,8 @@ Reference: [Click Here](https://blog.dehlin.dev/docker-with-strapi-v4)
 2. Register server
     > 'Name' is database name from .env and 'Host' is postgresDB
 3. Click on save
+
+
+
+
+Reference: [Click Here](https://blog.dehlin.dev/docker-with-strapi-v4)
