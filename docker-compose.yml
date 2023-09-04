@@ -5,6 +5,7 @@ services:
     build: ./strapi
     image: mystrapi:latest
     restart: unless-stopped
+    # env_file: .env
     env_file: stack.env
     environment:
       DATABASE_CLIENT: ${DATABASE_CLIENT}
@@ -20,9 +21,9 @@ services:
     volumes:
       - ./strapi/config:/opt/app/config
       - ./strapi/src:/opt/app/src
-      - ./strapi/package.json:/opt/package.json
-      - ./strapi/yarn.lock:/opt/yarn.lock
-      - ./.env:/opt/app/.env
+      # - ./strapi/package.json:/opt/package.json
+      # - ./strapi/yarn.lock:/opt/yarn.lock
+      # - ./.env:/opt/app/.env
     ports:
       - "1337:1337"
     networks:
@@ -34,6 +35,7 @@ services:
     image: postgres:12.0-alpine
     container_name: postgresDB
     restart: unless-stopped
+    # env_file: .env
     env_file: stack.env
     environment:
       POSTGRES_USER: ${DATABASE_USERNAME}
