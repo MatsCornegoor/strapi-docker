@@ -24,7 +24,7 @@ services:
       - ./strapi/package.json:/opt/package.json
       - ./strapi/yarn.lock:/opt/yarn.lock
       # - ./.env:/opt/app/.env
-      - stack.env:/opt/app/.env
+      - ./stack.env:/opt/app/.env
     ports:
       - "1337:1337"
     networks:
