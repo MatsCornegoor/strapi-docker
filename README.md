@@ -2,6 +2,9 @@
 
 1. Clone the repo to your local machine: `git clone <repo>`
 2. Change `.env.example` to `.env`
+3. `cd strapi`
+4. `npm install`
+5. `cd ..`
 
 ## To run in Development Mode:
 
@@ -24,6 +27,5 @@ Reference: [Click Here](https://blog.dehlin.dev/docker-with-strapi-v4)
 
 1. Login with credentials from .env file
 2. Register server
-    > Name is database name from .env
-    > Host is postgresDB
+    > 'Name' is database name from .env and 'Host' is postgresDB
 3. Click on save
