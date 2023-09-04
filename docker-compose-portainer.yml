@@ -36,7 +36,8 @@ services:
       POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
       POSTGRES_DB: ${DATABASE_NAME}
     volumes:
-      - ./postgresdata:/var/lib/postgresql/data/
+      # - ./postgresdata:/var/lib/postgresql/data/
+      - strapi-data:/var/lib/postgresql/data/
     ports:
       - "5432:5432"
     networks:
@@ -53,6 +54,9 @@ services:
       - strapi
     depends_on:
       - postgresDB
+      
+volumes:
+    strapi-data:
 
 networks:
   strapi:
