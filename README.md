@@ -1,6 +1,7 @@
 # 🚀 Strapi v4 Docker Template with Postgresql
 
 1. Clone the repo to your local machine: `git clone <repo>`
+2. Change `.env.example` to `.env`
 
 ## To run in Development Mode:
 
